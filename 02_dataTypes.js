@@ -27,6 +27,7 @@ object =
 /* 
 1. "use strict" let the js compiler tell that we are following new JS version coding style
 2. ";" use to terminate line inorder to increase code readibility
-3.  
+3. null vs undefined datatype : null is standalone value where as 'undefined' points to unassigned variable
+4. typeof(null) = object && typeof(undefined) = undefined
 
 */
