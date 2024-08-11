@@ -30,6 +30,25 @@ console.log(true)
 console.log(+true)
 console.log(+"")
 
+/* Comparision */
+// > , >=, <, <=, !=, ==
+
+console.log("2" > 1); // "2" convert to number
+
+
+console.log(null > 0); // false
+console.log(null == 0); // false
+console.log(null >= 0); // true
+
+console.log(undefined > 0); // false
+console.log(undefined == 0); // false
+console.log(undefined >= 0); // false
+
+
+/* == vs === */
+console.log("2" == 2); // true
+console.log("2" === 2); // false
+
 
 
 /* 
@@ -38,5 +57,5 @@ console.log(+"")
 2. empty string is boolean false
 3. string + number = string ("1" + 2 = 12)
 4. numer + string =  string (1 + 2 + "3" = 33)
-
+5. == (value check) vs === (value + datatype check)
 */
