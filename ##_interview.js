@@ -24,7 +24,8 @@
     : object function
 
 5. Stack vs Heap memory
-    : Stack (all primitive type use stack)
-      Heap (all Non primitive type use heap)
+    : Stack (all primitive type use stack) / call by value
+      Heap (all Non primitive type use heap) / call by reference
+      
 
 */
