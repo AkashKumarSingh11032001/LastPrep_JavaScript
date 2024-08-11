@@ -22,4 +22,9 @@
 
 4. typeof(function)?
     : object function
+
+5. Stack vs Heap memory
+    : Stack (all primitive type use stack)
+      Heap (all Non primitive type use heap)
+
 */
