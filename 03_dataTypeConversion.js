@@ -33,6 +33,7 @@ console.log(+"")
 /* Comparision */
 // > , >=, <, <=, !=, ==
 
+// avoid below type comparision
 console.log("2" > 1); // "2" convert to number
 
 
