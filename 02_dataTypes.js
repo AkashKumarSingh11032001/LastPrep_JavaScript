@@ -2,6 +2,11 @@
 
 // alert("hello") --> we are using node.js not browser DOM
 
+console.log(typeof 53);
+console.log(typeof null);
+console.log(typeof undefined);
+
+
 /* DATA TYPE
 
 number = 2^53
@@ -9,7 +14,10 @@ bigint
 string = ""
 boolean = 1/0
 null = standalone value
-undefined
+undefined = unassigned variable
+symbol = guaranteed to be unique
+
+object = 
 
 */
 
