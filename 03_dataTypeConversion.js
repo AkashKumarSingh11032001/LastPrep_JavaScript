@@ -50,6 +50,30 @@ console.log(undefined >= 0); // false
 console.log("2" == 2); // true
 console.log("2" === 2); // false
 
+/* Symbol */
+
+let a = Symbol("123")
+let b = Symbol("123")
+console.log(a);
+console.log(b);
+console.log(a == b); // even value is same, but symbol will maintain uniqueness
+console.log(a === b);
+
+
+/* ARRAY */
+const hero = ["akash","kumar","singh"]
+
+/* OBJECT */
+const obj = {
+    name: "Akash",
+    age: 23
+}
+
+/* FUNCTION */
+const myFunc = function () {
+    console.log("Hello There!!!");
+    
+}
 
 
 /* 
@@ -59,4 +83,5 @@ console.log("2" === 2); // false
 3. string + number = string ("1" + 2 = 12)
 4. numer + string =  string (1 + 2 + "3" = 33)
 5. == (value check) vs === (value + datatype check)
+
 */
