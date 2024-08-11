@@ -26,10 +26,9 @@ console.log(val);
 console.log("A" + " B");
 console.log("1" + 2); // 2 converted to string
 console.log(1 + 2 + "3"); // 1+2 added then converted to string
-
-
-
-
+console.log(true)
+console.log(+true)
+console.log(+"")
 
 
 
