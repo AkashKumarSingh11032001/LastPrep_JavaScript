@@ -17,4 +17,9 @@
 2. JS is Dynamic type or Static type?
     : JavaScript is a dynamically-typed language, which means that the interpreter assigns a type to a variable based on its value at runtime.
 
+3. typeof(null)?
+    : object
+
+4. typeof(function)?
+    : object function
 */
