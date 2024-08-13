@@ -24,6 +24,7 @@ console.log(stringArr);
 console.log(typeof stringArr);
 
 
+// Slice vs Splice
 console.log("A : ", myArr);
 
 let tempArr1 = myArr.slice(1,3);
@@ -33,6 +34,32 @@ console.log("B2 : ", tempArr1);
 let tempArr2 = myArr.splice(1,3);
 console.log("C1 : ", myArr);
 console.log("C2 : ", tempArr2);
+
+// push vs concat vs spread
+
+// push
+let a1 = ["a","b","c"];
+let b1 = ["d","e","f"];
+
+a1.push(b1)
+console.log(a1);
+
+// concat
+a1 = ["a","b","c"];
+b1 = ["d","e","f"];
+
+let concaAll = a1.concat(b1)
+console.log(concaAll);
+
+// spread
+a1 = ["a","b","c"];
+b1 = ["d","e","f"];
+
+let spreadAll = [...a1,...b1]
+console.log(spreadAll);
+
+
+
 
 
 
@@ -50,5 +77,5 @@ console.log("C2 : ", tempArr2);
     splice: 
         will include the last parameter.
         Original array will be geeting modified.
-
+4. push vs concat vs spread
 */
