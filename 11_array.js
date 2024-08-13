@@ -59,6 +59,24 @@ let spreadAll = [...a1,...b1]
 console.log(spreadAll);
 
 
+// flat
+const c1 = [1,2,[3,4,[5,6,7,[8,9,10]]]]
+const d1 = c1.flat(Infinity)
+console.log("D :",d1);
+
+
+// isArray and from
+
+console.log(Array.isArray("Akash"));
+console.log(Array.from("Akash"));
+console.log(Array.from({name:"Akash"})); //instresting
+
+// of
+let x = 10;
+let y = 20;
+let z = 30;
+console.log(Array.of(x,y,z));
+
 
 
 
