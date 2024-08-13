@@ -20,3 +20,9 @@ console.log(myDate4);
 console.log(myDate4.getDay());
 console.log(myDate4.getMonth());
 console.log(myDate4.getFullYear());
+
+
+let myDate5 = new Date()
+console.log(myDate5.toLocaleString('default',{
+    weekday: "long"
+}));
