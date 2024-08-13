@@ -14,6 +14,7 @@ num2 = 123.6689
 console.log(num2.toPrecision(3));
 
 let num3 = 1000000
-console.log(num3.);
+console.log(num3.toLocaleString());
+console.log(num3.toLocaleString('en-IN'));
 
 
