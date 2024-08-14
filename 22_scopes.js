@@ -56,7 +56,7 @@ console.log(sumXX(7));
 2. variable declared at global scope, that will be aviable inside block scope
 3. variable declared at block scope, that will not be aviable outside block scope
 4. core scope inside browser will be different than than of node.
-5. in node, global scope is window object
+5. in node, global scope is empty object
 6. in browser, global scope is window object
 7. closure
 
