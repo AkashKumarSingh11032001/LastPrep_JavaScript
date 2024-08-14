@@ -30,7 +30,7 @@ const chai2 = function(){
 }
 
 
-// Arrow function.
+// Arrow function. [ Explicit return ]
 const addTwo = (a,b) => {
     return a+b;
 }
