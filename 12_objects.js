@@ -50,7 +50,6 @@ const newUser = {
 };
 
 console.log(newUser);
-console.log(newUser);
 console.log(newUser.fullname.last_name);
 // add additional check if 'x' exists or not
 console.log(newUser.fullname?.last_name);
@@ -60,6 +59,28 @@ let o1 = {1:"a",2:"b"}
 let o2 = {3:"c",4:"d"}
 let o3 = {...o1,...o2}
 console.log(o3);
+
+// value from database
+let userData = [
+    {
+      id: "1",
+      name: "Akash",
+      age: 23,
+    },
+    {
+      id: "2",
+      name: "Akash",
+      age: 23,
+    },
+]
+
+console.log(userData[1].id);
+
+// find all array of keys n Values
+console.log(Object.keys(userData[1]));
+console.log(Object.values(userData[1]));
+console.log(userData[1].hasOwnProperty('id'));
+
 
 /*
 1. object can be created in two way: constructor and litralls
