@@ -17,6 +17,27 @@ let user1 = {
     [mySym]: "myval",
 }
 console.log(user1[mySym]);
+console.log(user1);
+
+
+
+// object operation
+user.age = 25;
+console.log(user);
+
+
+// make any key as constant
+Object.freeze(user.age);
+user.age = 25;
+
+console.log(user);
+
+// add function into object
+user.sayHi = function(){
+    console.log("Hi");
+}
+console.log(user.sayHi());
+
 
 
 
