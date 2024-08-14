@@ -40,6 +40,7 @@ handleObj({
 
 
 /*
-1.
+1. rest and spread opr are almost same, it varies over the place where we implmenet.
+
 
 */
