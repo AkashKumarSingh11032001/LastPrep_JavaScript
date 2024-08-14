@@ -81,6 +81,19 @@ console.log(Object.keys(userData[1]));
 console.log(Object.values(userData[1]));
 console.log(userData[1].hasOwnProperty('id'));
 
+/* Object destruct */ 
+let course = {
+    name: "React",
+    duration: "3 months",
+    price: 5000,
+}
+let {name, duration, price} = course;
+console.log(name, duration, price);
+
+/* APIs */
+
+
+
 
 /*
 1. object can be created in two way: constructor and litralls
