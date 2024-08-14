@@ -38,6 +38,12 @@ user.sayHi = function(){
 }
 console.log(user.sayHi());
 
+// object refrence
+user.hello = function(){
+    console.log(`hello, ${this.name}`);
+}
+console.log(user.hello());
+
 
 
 
