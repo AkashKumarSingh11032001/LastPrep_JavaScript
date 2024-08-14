@@ -95,6 +95,7 @@ console.log(name, duration, price);
 
 
 
+
 /*
 1. object can be created in two way: constructor and litralls
     litrals: object is not sigleton object
