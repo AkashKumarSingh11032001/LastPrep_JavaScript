@@ -57,7 +57,7 @@ for (const i in myObj2) {
   console.log(i, "->", myObj2[i]);
 }
 
-//
+// for-each && map
 const arr2 = ["a", "b", "c", "d", "e"];
 
 arr2.forEach(function (items) {
@@ -72,6 +72,20 @@ const arr3 = arr2.map((i) => {
   // i will hold the value of a object
   console.log(i);
 });
+
+// real time case
+const json = [
+  { name: "Akash", age: 20 },
+  { name: "Kumar", age: 21 },
+  { name: "Singh", age: 22 },
+];
+
+json.forEach((items) => {
+  // i will hold the value of a object
+  console.log(items);
+  console.log(items.name, " & ", items.age);
+});
+
 
 /* 
 1. for-of and for-in loop on array, map & object
