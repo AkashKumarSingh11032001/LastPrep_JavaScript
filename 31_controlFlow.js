@@ -15,7 +15,7 @@ if (temperature === "30") console.log("=== PAss");
 else console.log("=== fail: compare with datatype");
 
 /* +++++++ SWITCH CASE +++++++ */
-let key = 3
+let key = 5
 switch (key) {
   case 1:
     console.log(1);
@@ -28,6 +28,7 @@ switch (key) {
     break;
 
   default:
+    console.log(-1);
     break;
 }
 
