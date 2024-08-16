@@ -64,6 +64,10 @@ arr2.forEach(function (items) {
   console.log(items);
 });
 
+arr2.forEach(function (items, idx, arr) {
+  console.log(items, idx, arr);
+});
+
 const arr3 = arr2.map((i) => {
   // i will hold the value of a object
   console.log(i);
