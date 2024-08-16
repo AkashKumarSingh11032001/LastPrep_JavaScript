@@ -35,5 +35,8 @@ switch (key) {
 /*
 1. COMPARISION OPR: <, >, <=, >=, ==, !=, ===, !==
 2. Logical OPR: &&, ||, !
+3. truthy and falsy value
+  Falsey: false,0,-0,BigInt 0n, "",null,undefined, NaN
+  Truthy: "0", " ", [], {}, function(){}
 
 */
