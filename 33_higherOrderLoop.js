@@ -34,6 +34,8 @@ for(const [keys, values] of mapX){ // i will hold the key-value pair
     console.log(keys, "->", values)
 }
 
+// in MAP we can't use for-in loop.
+
 // on "Object"
 const myObj1 = {
     'game1': 'GTA',
