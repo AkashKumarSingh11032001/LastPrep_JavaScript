@@ -54,5 +54,11 @@ document.querySelectorAll('p')[0].innerText
 document.getElementsByTagName('p')[0].innerText
 // 'Lorem ipsum dolor sit - 1'
 
+// convert HTMLCollection to array
+Array.from(document.getElementsByTagName('p'))
+// (2) [p#one, p#two]
+Array.from(document.getElementsByTagName('p'))[0]
+// <p>Lorem ipsum dolor sit - 1 </p>
+
 
 
