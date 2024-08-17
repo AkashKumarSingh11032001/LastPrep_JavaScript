@@ -22,7 +22,7 @@ title.innerContent
 // 'Learning DOM ~ With AKS'
 title.innerHTML
 
-// querySelector
+/*  querySelector - select first occurence*/
 document.querySelector('h1')
 // <h1 id=​"first" class=​"heading">​Learning DOM​</h1>​
 document.querySelector('p')
@@ -33,6 +33,10 @@ document.querySelector('h1').style.backgroundColor = 'red'
 // background changed
 document.querySelector('.heading')
 // <h1 id=​"first" class=​"heading">​Learning DOM
+
+/*  querySelectorAll - select all occurence*/
+document.querySelectorAll('p')
+// NodeList(2) [p#second, p#third]
 
 
 
