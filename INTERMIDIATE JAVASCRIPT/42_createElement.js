@@ -12,10 +12,11 @@ console.log(parent.lastElementChild);
 const day1 = document.querySelector(".day");
 console.log(day1);
 day1.style.color = "Red";
-
 console.log(day1.parentElement);
 console.log(day1.nextElementSibling);
 console.log(day1.nextElementSibling.nextElementSibling);
+console.log(day1.previousElementSibling);
+console.log(day1.previousElementSibling.previousElementSibling);
 
 console.log("NODES: ", parent.childNodes);
 
