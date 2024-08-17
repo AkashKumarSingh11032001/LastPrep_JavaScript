@@ -31,17 +31,18 @@ console.log(mapNum2); // new array
 
 // chaining --- IMP
 const newChain = mapNum
-                .map((num) => num * 10)
-                .map((num) => num + 10)
-                .filter((num) => num > 40);
+  .map((num) => num * 10)
+  .map((num) => num + 10)
+  .filter((num) => num > 40);
 console.log(newChain);
-
-
-        
 
 // Reduce
 const reduceNum = myNum.reduce((acc, curr) => acc + curr);
+const reduceNum2 = myNum.reduce((acc, curr) => (
+  acc + curr
+), 0); // 0 is the init default value to acc
 console.log(reduceNum);
+console.log(reduceNum2);
 
 /* 
 1. map and for-each will not return anythings where as filter and reduce will return some value.
