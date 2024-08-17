@@ -26,7 +26,7 @@ title.innerHTML
 document.querySelector('h1')
 // <h1 id=​"first" class=​"heading">​Learning DOM​</h1>​
 document.querySelector('p')
-// <p id=​"second">​Learning DOM with AKS​</p>​
+// <p>Lorem ipsum dolor sit - 1 </p>
 document.querySelector('h1').innerText
 // 'Learning DOM'
 document.querySelector('h1').style.backgroundColor = 'red'
@@ -36,8 +36,23 @@ document.querySelector('.heading')
 
 /*  querySelectorAll - select all occurence*/
 document.querySelectorAll('p')
-// NodeList(2) [p#second, p#third]
+// NodeList(2) [p#one, p#two]
 
+
+// NodeList vs HTMLColection
+document.querySelectorAll('p')
+// NodeList(2) [p#one, p#two]
+document.getElementsByTagName('p')
+// HTMLCollection(2)[p#one, p#two]
+
+document.querySelectorAll('p')[0]
+// <p>Lorem ipsum dolor sit - 1 </p>
+document.getElementsByTagName('p')[0]
+// <p>Lorem ipsum dolor sit - 1 </p>
+document.querySelectorAll('p')[0].innerText
+// 'Lorem ipsum dolor sit - 1'
+document.getElementsByTagName('p')[0].innerText
+// 'Lorem ipsum dolor sit - 1'
 
 
 
