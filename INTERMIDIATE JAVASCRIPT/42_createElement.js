@@ -15,10 +15,21 @@ day1.style.color = "Red";
 console.log(day1.parentElement);
 console.log(day1.nextElementSibling);
 console.log(day1.nextElementSibling.nextElementSibling);
-console.log(day1.previousElementSibling);
-console.log(day1.previousElementSibling.previousElementSibling);
+
 
 console.log("NODES: ", parent.childNodes);
+
+// set or get attribute
+const div = document.createElement('div')
+console.log(div)
+div.className = "main"
+div.id = Math.round(Math.random()*10+1)
+div.setAttribute("title","generate title")
+div.style.backgroundColor = "green"
+div.style.padding = "12px"
+div.innerText = "Chai with Akash"
+parent.appendChild(div)
+
 
 //  create new element
 const newElement = document.createElement("h1");
