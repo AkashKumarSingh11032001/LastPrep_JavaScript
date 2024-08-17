@@ -24,6 +24,12 @@ jsonkeys = json.filter((key) => {
 })
 console.log(jsonkeys);
 
+const mapNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const mapNum2 = mapNum.map((num) => num * 2);
+console.log(mapNum);
+console.log(mapNum2); // new array
+
+
 
  
 // Reduce
