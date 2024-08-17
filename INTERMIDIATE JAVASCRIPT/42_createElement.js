@@ -25,6 +25,7 @@ newElement.innerHTML = "Hello World";
 parent.appendChild(newElement);
 console.log(parent.children);
 console.log(parent.childNodes);
+
 //  remove element
 parent.removeChild(parent.children[0]);
 console.log(parent.children);
@@ -34,4 +35,14 @@ const newElement2 = document.createElement("h1");
 newElement2.innerHTML = "Hello World 2";
 parent.replaceChild(newElement2, parent.children[0]);
 console.log(parent.children);
+console.log(parent.childNodes);
+
+//  clone element
+const clone = parent.children[0].cloneNode(true);
+parent.appendChild(clone);
+console.log(parent.children);
+console.log(parent.childNodes);
+
+
+
 
