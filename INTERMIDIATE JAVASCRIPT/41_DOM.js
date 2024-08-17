@@ -8,3 +8,19 @@ document.getElementById("first").setAttribute('class', 'body')
 // undefined
 document.getElementById("first").getAttribute('class')
 // 'body'
+
+
+/* STYLE */
+const title = document.getElementById('title')
+title.style.backgroundColor = 'red'
+title.style.padding = '15px'
+
+// innerText vs innerContent
+title.innerText
+// 'Learning DOM'
+title.innerContent
+// 'Learning DOM ~ With AKS'
+title.innerHTML
+
+
+
