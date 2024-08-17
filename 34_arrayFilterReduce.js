@@ -16,12 +16,12 @@ const json = [
   { name: "Singh", age: 22 },
 ];
 
-let jsonkeys = json.filter((key)=> key.name === 'Kumar')
+let jsonkeys = json.filter((key) => key.name === "Kumar");
 console.log(jsonkeys);
 
 jsonkeys = json.filter((key) => {
-    return key.name === 'Kumar' && key.age >= 21
-})
+  return key.name === "Kumar" && key.age >= 21;
+});
 console.log(jsonkeys);
 
 const mapNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -29,15 +29,22 @@ const mapNum2 = mapNum.map((num) => num * 2);
 console.log(mapNum);
 console.log(mapNum2); // new array
 
+// chaining --- IMP
+const newChain = mapNum
+                .map((num) => num * 10)
+                .map((num) => num + 10)
+                .filter((num) => num > 40);
+console.log(newChain);
 
 
- 
+        
+
 // Reduce
 const reduceNum = myNum.reduce((acc, curr) => acc + curr);
 console.log(reduceNum);
 
 /* 
 1. map and for-each will not return anythings where as filter and reduce will return some value.
-2. 
+2. chaining
 
 */
