@@ -29,5 +29,16 @@ buttons.forEach((button) => {
 
   });
 
-  
+
 });
+
+/* POINT TO FOCUS
+
+1. focus on the way to secet required element
+2. add event listner to each button
+3. how to use event
+4. how to use event.target
+5. how to use event.target.id
+6. how to use if statement
+
+*/
