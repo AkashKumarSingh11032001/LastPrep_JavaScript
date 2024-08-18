@@ -55,7 +55,7 @@ parent.appendChild(clone);
 console.log(parent.children);
 console.log(parent.childNodes);
 
-
+/* ++++ ADD ELEMENT ++++ */
 // function to add element [way 1]
 function addLang(langName){
     const newEle = document.createElement('li')
@@ -70,7 +70,7 @@ function addOption(langName){
     parent.innerHTML += `<li>${langName}</li>`
 }
 
-// [way 3]
+// best way [way 3]
 function addOptionX(langName){
     const li = document.createElement('li')
     li.appendChild(document.createTextNode(langName))
@@ -78,12 +78,27 @@ function addOptionX(langName){
     
 }
 
+
 addLang("Python 2.0")
 addLang("Python 3.0")
 addOption("C++")
 addOption("C")
 addOptionX("Perl")
 addOptionX("JavaScript")
+
+
+/* ++++ REMOVE ELEMENT ++++ */
+
+// way 1
+const secondLang = document.querySelector("li:nth-child(2)")
+secondLang.innerHTML = "Mojo"
+
+// way 2
+secondLang = document.querySelector("li:nth-child(2)")
+const newLi = document.createElement('li')
+newLi.innerHTML = "Mojo"
+secondLang.replaceWith(newLi)
+
 
 
 
