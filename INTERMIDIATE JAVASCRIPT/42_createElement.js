@@ -56,7 +56,7 @@ console.log(parent.children);
 console.log(parent.childNodes);
 
 
-// function to add element
+// function to add element [way 1]
 function addLang(langName){
     const newEle = document.createElement('li')
     newEle.innerText = `${langName}`
@@ -64,8 +64,26 @@ function addLang(langName){
     parent.appendChild(newEle)
 }
 
+// optimized [way 2]
+function addOption(langName){
+    const parent = document.querySelector('.lang')
+    parent.innerHTML += `<li>${langName}</li>`
+}
+
+// [way 3]
+function addOptionX(langName){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langName))
+    document.querySelector('.lang').appendChild(li)
+    
+}
+
 addLang("Python 2.0")
 addLang("Python 3.0")
+addOption("C++")
+addOption("C")
+addOptionX("Perl")
+addOptionX("JavaScript")
 
 
 
