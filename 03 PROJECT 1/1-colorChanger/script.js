@@ -1,8 +1,9 @@
 /* STEP 1: select appropiate element */
 
 const buttons = document.querySelectorAll(".button");
-// console.log(buttons);
 const body = document.querySelector("body");
+// console.log(buttons);
+// console.log(body);
 
 /*  STEP 2: query on each button and add event listner to each button */
 buttons.forEach((button) => {
@@ -18,13 +19,13 @@ buttons.forEach((button) => {
       body.style.backgroundColor = e.target.id; // or 'grey
     }
     if (e.target.id === "white") {
-      body.style.backgroundColor = e.target.id; // or 'grey
+      body.style.backgroundColor = e.target.id; // or 'white
     }
     if (e.target.id === "blue") {
-      body.style.backgroundColor = e.target.id; // or 'grey
+      body.style.backgroundColor = e.target.id; // or 'blue
     }
     if (e.target.id === "yellow") {
-      body.style.backgroundColor = e.target.id; // or 'grey
+      body.style.backgroundColor = e.target.id; // or 'yellow
     }
 
   });
