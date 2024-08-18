@@ -90,7 +90,7 @@ addOptionX("JavaScript")
 /* ++++ REMOVE ELEMENT ++++ */
 
 // way 1
-const secondLang = document.querySelector("li:nth-child(2)")
+let secondLang = document.querySelector("li:nth-child(2)")
 secondLang.innerHTML = "Mojo"
 
 // way 2
@@ -99,6 +99,11 @@ const newLi = document.createElement('li')
 newLi.innerHTML = "Mojo"
 secondLang.replaceWith(newLi)
 
+
+// replace eg
+const repEle = document.querySelector('.lang li:first-child')
+console.log(repEle);
+repEle.outerHTML = "<li>TypeScript</li>"
 
 
 
