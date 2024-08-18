@@ -87,7 +87,7 @@ addOptionX("Perl")
 addOptionX("JavaScript")
 
 
-/* ++++ REMOVE ELEMENT ++++ */
+/* ++++ REPLACE ELEMENT ++++ */
 
 // way 1
 let secondLang = document.querySelector("li:nth-child(2)")
@@ -104,6 +104,12 @@ secondLang.replaceWith(newLi)
 const repEle = document.querySelector('.lang li:first-child')
 console.log(repEle);
 repEle.outerHTML = "<li>TypeScript</li>"
+
+/* ++++ REMOVE ELEMENT ++++ */
+
+const remEle = document.querySelector(".lang li:last-child")
+remEle.remove()
+
 
 
 
