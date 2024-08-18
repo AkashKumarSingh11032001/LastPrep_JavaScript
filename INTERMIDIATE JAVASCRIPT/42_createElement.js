@@ -56,5 +56,17 @@ console.log(parent.children);
 console.log(parent.childNodes);
 
 
+// function to add element
+function addLang(langName){
+    const newEle = document.createElement('li')
+    newEle.innerText = `${langName}`
+    const parent = document.querySelector('.lang')
+    parent.appendChild(newEle)
+}
+
+addLang("Python 2.0")
+addLang("Python 3.0")
+
+
 
 
