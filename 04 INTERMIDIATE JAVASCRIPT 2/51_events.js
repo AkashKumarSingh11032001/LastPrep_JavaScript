@@ -18,15 +18,24 @@ document.getElementById("images").addEventListener('click',(e)=>{
     console.log("image clicked");
     
 }, false)
+
 document.getElementById("owl").addEventListener('click',(e)=>{
     console.log("owl clicked");
     e.stopPropagation()
 },false)
+
 document.getElementById("google").addEventListener('click',(e)=>{
     e.preventDefault()
     e.stopPropagation()
     console.log("google clicked");
 },false)
+
+
+// click image and image should diappear
+document.querySelector("#images").addEventListener('click',(e)=>{
+    e.target.style.display = 'none'
+    // inorder to remove owl image, comment the above owl selector
+})
 
 /* 
 1. in addEventListener we have three parameter
