@@ -60,13 +60,44 @@ function checkGuess(guess) {
 }
 
 // clean input and update the variable
-function displayGuess(guess) {}
+function displayGuess(guess) {
+  userInput.value = "";
+  userInput.focus();
+  numGuess++;
+  //   guessSlot.textContent = prevGuess.join(", ");
+  guessSlot.innerHTML += `${guess} , `;
+  remaining.innerHTML = `${11 - numGuess}`;
+}
 
 // display n update dom
-function displayMessage(message) {}
+function displayMessage(message) {
+  lowOrHigh.innerHTML = `<p>${message}</p>`;
+}
 
 // new game
-function newGame() {}
+function newGame() {
+  const newGameButton = document.querySelector("#newGame");
+  newGameButton.addEventListener("click", () => {
+    playGame = true;
+    prevGuess = [];
+    randomNumber = parseInt(Math.random() * 100 + 1);
+    numGuess = 1;
+    remainingGuesses = 10;
+    guessSlot.textContent = "";
+    remaining.textContent = `${11 - remainingGuesses}`;
+    lowOrHigh.textContent = "";
+    startOver.textContent = "";
+  });
+}
 
 // end game
-function endGame() {}
+function endGame() {
+  userInput.value = "";
+  userInput.focus();
+  p.classList.add("button");
+  p.innerHTML = "<h2> Start new game </h2>";
+  startOver.appendChild(p);
+
+  playGame = false;
+  newGame();
+}
