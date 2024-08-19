@@ -35,6 +35,13 @@ function validateGuess(guess){
         userInput.focus()
         return false
     }
+    else{
+        prevGuess.push(guess)
+        if(numGuess === 11){
+            displayGuess(guess)
+            displayMessage("Game Over")
+        }
+    }
 }
 
 // guess ==== randomNumber
