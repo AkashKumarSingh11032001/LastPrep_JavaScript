@@ -26,6 +26,7 @@ document.querySelector('#start').addEventListener('click',() => {
 })
 document.querySelector('#stop').addEventListener('click',()=>{
     clearInterval(holdX)
+    holdX = null
     document.querySelector('body').style.backgroundColor = 'white';
     document.querySelector('#color').innerHTML = 'white';
     documentquerySelector('#color').style.color = 'black';
