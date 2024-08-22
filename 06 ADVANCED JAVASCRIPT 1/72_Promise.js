@@ -106,7 +106,7 @@ fetch("https://randomuser.me/api/")
     Pending: initial state, neither fulfilled nor rejected.
     Fulfilled: meaning that the operation completed successfully.
     Rejected: meaning that the operation failed.
-
+2. "fetch" ia always executed because of "Microtask queue"
 
 
 */
