@@ -22,13 +22,13 @@
 // Example of API Request using XMLHttpRequest object.
 const xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://randomuser.me/api/');
-xhr.send()
 xhr.onreadystatechange = () => {
     if (xhr.readyState === 4 && xhr.status === 200) {
         const data = JSON.parse(xhr.responseText);
         console.log(data);
     }
 }
+xhr.send()
 
 
 
