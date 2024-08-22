@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = (str)=>{
+        console.log(str, Date.now())
+    }
+
+    const displayMsg = (str) => {
+        document.querySelector("h1").innerHTML = `${str} ${Date.now()}`
+    }
+
+    const interValid = setInterval(sayDate, 1000, "AKS")
+
+    clearTimeout(interValid)
+
+    let holdX
+    document.querySelector("#start").addEventListener('click',()=>{
+        holdX = setInterval(displayMsg, 1000, "AKS!")
+    })
+    document.querySelector("#stop").addEventListener('click',()=>{
+        clearInterval(holdX)
+    })
+
+
+</script>
+</html>

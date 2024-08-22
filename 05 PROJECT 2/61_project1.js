@@ -34,6 +34,8 @@ document.querySelector('#stop').addEventListener('click', ()=>{
 })
 
 
+
+
 /*
 1. setTimeOut(<refrence>,<timeout>)
 */
