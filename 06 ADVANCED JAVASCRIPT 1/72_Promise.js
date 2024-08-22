@@ -81,6 +81,25 @@ const promise5 = new Promise((resolve, reject) => {
   }
 })();
 
+// Practical eg.
+(async () => {
+  const res = await fetch("https://randomuser.me/api/");
+  const data = await res.json();
+  console.log(data);
+})();
+
+// try catch -- [nice way]
+fetch("https://randomuser.me/api/")
+  .then((res) => {
+    return res.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
 /* "Async & await" and "Promise" are to handle Asynchronous programming in JS
 
 1. A Promise is an object that may produce a single value sometime in the future: either a resolved value if it succeeds, or a reason that it failed if it doesn't. A Promise may be in one of these states:
