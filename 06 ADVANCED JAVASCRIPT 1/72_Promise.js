@@ -29,11 +29,35 @@ const promise3 = new Promise((resolve, reject) => {
   }, 1000);
 });
 promise3.then((user) => {
-    console.log(user);
-    
+  console.log(user);
 });
 
+// Promise way 4
+const promise4 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    let error = false;
+    if (!error) {
+      console.log("Async Task 3 Accomplished");
+      resolve({ userName: "AKS", email: "aks@gmail.com" });
+    } else {
+      reject("Error Occured");
+    }
+  }, 1000);
+});
 
+promise4
+  .then((user) => {
+    console.log(user);
+    return user.userName;
+  })
+  .then((myUsername) => {
+    console.log(myUsername);
+  })
+  .catch((err) => {
+    console.log(err);
+  }).finally(()=>{
+    console.log("The promise is either resolved or rejected.")
+  });
 
 /* "Async & await" and "Promise" are to handle Asynchronous programming in JS
 
