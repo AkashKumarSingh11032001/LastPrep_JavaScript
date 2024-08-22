@@ -1,4 +1,4 @@
-// Promise way 1 
+// Promise way 1
 const promise1 = new Promise((resolve, reject) => {
   // do work
   setTimeout(() => {
@@ -7,20 +7,32 @@ const promise1 = new Promise((resolve, reject) => {
   }, 1000);
 });
 promise1.then(() => {
-    console.log('Promise 1 Consumed');
-})
+  console.log("Promise 1 Consumed");
+});
 
 // Promise way 2
-new Promise((resolve,reject)=>{
-// do work
+new Promise((resolve, reject) => {
+  // do work
   setTimeout(() => {
     console.log("Async Task 2 Accomplished");
     resolve();
   }, 1000);
+}).then(() => {
+  console.log("Promise 2 Consumed");
+});
 
-}).then(()=>{
-    console.log('Promise 2 Consumed')
-})
+// Promise way 3 --- passing paranter through resolve to then
+const promise3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    console.log("Async Task 2 Accomplished");
+    resolve({ userName: "AKS", email: "aks@gmail.com" });
+  }, 1000);
+});
+promise3.then((user) => {
+    console.log(user);
+    
+});
+
 
 
 /* "Async & await" and "Promise" are to handle Asynchronous programming in JS
