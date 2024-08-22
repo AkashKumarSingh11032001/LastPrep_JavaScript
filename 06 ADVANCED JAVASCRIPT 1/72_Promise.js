@@ -40,7 +40,7 @@ const promise4 = new Promise((resolve, reject) => {
       console.log("Async Task 3 Accomplished");
       resolve({ userName: "AKS", email: "aks@gmail.com" });
     } else {
-      reject("Error Occured");
+      reject("Error 1 Occured");
     }
   }, 1000);
 });
@@ -55,9 +55,31 @@ promise4
   })
   .catch((err) => {
     console.log(err);
-  }).finally(()=>{
-    console.log("The promise is either resolved or rejected.")
+  })
+  .finally(() => {
+    console.log("The promise is either resolved or rejected.");
   });
+
+// Promise way 5
+const promise5 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    let error = true;
+    if (!error) {
+      console.log("Async Task 4 Accomplished");
+      resolve({ userName: "AKS 4", email: "aks@gmail.com" });
+    } else {
+      reject("Error 2 Occured");
+    }
+  }, 1000);
+});
+(async () => {
+  try {
+    const res = await promise5;
+    console.log(res);
+  } catch (err) {
+    console.log(err);
+  }
+})();
 
 /* "Async & await" and "Promise" are to handle Asynchronous programming in JS
 
