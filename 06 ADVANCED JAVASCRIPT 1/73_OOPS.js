@@ -9,7 +9,7 @@ const user = {
     console.log("User has logged out");
   },
   getDetail: function () {
-    console.log(this);
+    console.log(this); // user public property
 
     console.log(
       `UserName: ${this.uname}, age: ${this.age}, email: ${this.email}`
@@ -21,6 +21,7 @@ console.log(user);
 console.log(user.login());
 console.log(user.logout());
 console.log(user.getDetail());
+console.log(this) // {}
 
 // class User {
 //   constructor(uname, age, email) {
@@ -70,4 +71,6 @@ console.log(user.getDetail());
 
 14. this keyword:
     this keyword is a reference to the current object.
+        keep note: 
+            print 'this' outside and print 'this' inside object
 */
