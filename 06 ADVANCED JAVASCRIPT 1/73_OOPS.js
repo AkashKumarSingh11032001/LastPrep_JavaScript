@@ -23,6 +23,20 @@ console.log(user.logout());
 console.log(user.getDetail());
 console.log(this) // {}
 
+function User(uname, age, email) {
+    this.uname = uname;
+    this.age = age;
+    this.email = email;
+
+    return this
+}
+
+const user1 = new User("Akash", 22, "akash@gmail.com");
+const user2 = new User("Kumar", 23, "akashSingh@gmail.com");
+console.log(user1);
+console.log(user2);
+
+
 // class User {
 //   constructor(uname, age, email) {
 //     this.uname = uname;
@@ -50,7 +64,7 @@ console.log(this) // {}
 
 5. object litral:
     Object litral is a way to create an object in javascript.
-6. Constructor function:
+6. Constructor function: (new keyword)
     Constructor function is a function that is used to create an object.
 7. Prototype:
     Prototype is an object that is used to share properties and methods between objects.
