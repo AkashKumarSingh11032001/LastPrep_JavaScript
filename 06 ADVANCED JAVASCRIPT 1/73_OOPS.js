@@ -57,6 +57,7 @@ console.log(user1.constructor);
 //   }
 // }
 
+
 /*
 1. javascript and classes
     Javascript is a prototype-based language, class concept is just a syntacic sugar
