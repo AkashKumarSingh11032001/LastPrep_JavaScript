@@ -27,14 +27,26 @@ function User(uname, age, email) {
     this.uname = uname;
     this.age = age;
     this.email = email;
+    this .greeting = function() {
+        console.log(`Welcome ${this.uname}`);
+        
+    }
 
     return this
 }
 
+// new object creation
 const user1 = new User("Akash", 22, "akash@gmail.com");
 const user2 = new User("Kumar", 23, "akashSingh@gmail.com");
 console.log(user1);
 console.log(user2);
+
+// constructor
+// constructor is a special method that is called when an object is created from a class.
+console.log(user1.constructor);
+
+
+
 
 
 // class User {
