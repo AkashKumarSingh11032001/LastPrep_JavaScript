@@ -3,10 +3,10 @@
 let myName = "Akash   "
 console.log(myName.length);
 
-// actual length (already existing function)
+// actual length (already existing function) --> see last
 console.log(myName.trim().length);
 
-// actual length (own created function)
+
 let myHer = ["Iron Man", "Caption America"]
 let heroPower = {
     IronMan: "Fly",
@@ -28,4 +28,41 @@ Array.prototype.toArray = function() {
 }
 
 myHer.toArray() //--> can access new property (toArray)
-heroPower.toArray() //--> can't access new property (toArray)
+//heroPower.toArray() //--> can't access new property (toArray)
+
+
+
+// new example
+const User = {
+    name: "chai",
+    email: "chai@google.com"
+}
+
+const Teacher = {
+    makeVideo: true
+}
+
+const TeachingSupport = {
+    isAvailable: false
+}
+
+const TASupport = {
+    makeAssignment: 'JS assignment',
+    fullTime: true,
+    __proto__: TeachingSupport //--> old way to link property
+}
+
+Teacher.__proto__ = User //--> old way to link property
+
+// new way to link
+Object.setPrototypeOf(TeachingSupport, Teacher)
+
+
+//--> actual length (own created function) 
+String.prototype.truLength = function(){
+    console.log(`${this}`);
+    console.log(`True length : ${this.trim().length}`);
+}
+myName.truLength()
+"Kumar".truLength()
+"Singh".truLength()
