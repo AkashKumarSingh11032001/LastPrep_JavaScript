@@ -27,5 +27,6 @@
     : Stack (all primitive type use stack) / call by value
       Heap (all Non primitive type use heap) / call by reference
       
+6. value of math.pie === 3.14? can we round of to 4?
 
 */
