@@ -77,7 +77,7 @@ user2.email = "abc@gmail.com"
 console.log(user2.email);
 
 
-// --> OBJECT BASED SYNTAX
+// --> OBJECT BASED SYNTAX [rare used]
 const UserXX = {
     _email: 'aks@gmail.com',
     _pass: '123',
